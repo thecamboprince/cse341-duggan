@@ -5,9 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js",
     "start": "nodemon server.js"
   },
-  "author": "",
+  "author": "Chase Duggan",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
