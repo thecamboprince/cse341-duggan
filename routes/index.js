@@ -1,8 +1,12 @@
+// Require the 'express' module and create a router instance
 const routes = require('express').Router();
 
-const myConroller = require('../controllers')
+// Require the 'myController' module
+const myController = require('../controllers');
 
-routes.get('/', myConroller.awesomeFunction);
-routes.get('/awesome', myConroller.returnAnotherPerson);
+// Define routes for the root path '/' and '/awesome', using functions from the 'myController' module
+routes.get('/', myController.awesomeFunction);
+routes.get('/awesome', myController.returnAnotherPerson);
 
+// Export the router for use in other modules
 module.exports = routes;
